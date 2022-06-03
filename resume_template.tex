@@ -230,7 +230,7 @@
 % Renders a a CV section headline with a nice underline in main color.
 % param 1: section title
 \newcommand{\cvsection}[1] {
-	\vspace{14pt}
+	\vspace{10pt}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
 		\textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\
@@ -250,7 +250,7 @@
  		\textcolor{black}{\textbf{#1}} & \textcolor{darkcol}{#2}\\
 	\end{tabular*}%
 	
-	\hspace{4pt}
+	\hspace{1pt}
 	\begin{tikzpicture}[scale=1,rounded corners=2pt,very thin]
 		\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.15);
 		\fill [accentcol] (0,0) rectangle (#3\mpwidth, 0.15);
@@ -304,7 +304,7 @@
 		\cvtext{\textbf{Achievements include:}}\\
 		{#7}
 	}
-	\vspace{14pt}
+	\vspace{10pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -327,7 +327,7 @@
 		\cvtext{{ \textcolor{darkcol} {#3} }}\\
 	}
 
-	\cvtext{#4}\\[14pt]
+	\cvtext{#4}\\[10pt]
 }
 
 %---------------------------------------------------------------------------------------
@@ -487,10 +487,9 @@
 \vfill\null
 \cvsection{PROFILE}
 
-\cvtext{ Currently a rising senior at Middle East Technical University as a computer engineer. Relevent courses and concepts that I have currently completed 
-include data structures, discrete computational structures, data communications and networking, data management and file structures, software engineering 
-methods and practices, dynamic programming, and programming language concepts. I believe this foundation gives me the necessary tools to tackle any problems 
-as an intern.\\
+\cvtext{ Currently a senior at Middle East Technical University as a computer engineer where our graduation project is about software composition
+			analyses. Also working full time as a computer engineer at a biomedical startup company called Oruba Technology. Looking for a much more
+			challenging role. \\
 }
 
 %---------------------------------------------------------------------------------------
@@ -498,6 +497,25 @@ as an intern.\\
 %----------------------------------------------------------------------------------------
 \vfill\null
 \cvsection{WORK EXPERIENCE}
+
+\vfill\null
+\cvevent
+	{Mar 21 - present}
+	{Computer Engineer}
+	{Oruba Technology \textcolor{gray}{Ankara, Turkey}}
+	{As a startup company, many job roles had to be filled as a computer engineer. This included improving the device software as well as engineering 
+		new solutions for the components in research and delopment. Many meetings were conducted with customers abroad about various software solutions as 
+		well as providing technical assistance.}
+	{\cvlist{
+		\item Used Vue.js for the frontend and Python for the backend to add new features and update existing features to the device application
+  		\item Created a brand new website for the company
+    	\item Utilized WebXR technology to create a VR game that can be controled throuh electrodes
+     	\item Implemeted an update mechanism for IoT devices using Mender.IoT
+      	\item Conducted research to strengthen security vulnerabilities of the system
+       	\item Provided remote technical support to all customers including those abroad
+	}}
+	{}
+	{}
 
 \vfill\null
 \cvevent
@@ -564,6 +582,10 @@ as an intern.\\
 			\item OpenVPN
 		}}
 		{}
+
+%-----------------------------
+% Extracurricular Activities
+%-----------------------------
 
 \vfill\null
 \cvsection{Extracurricular Activities}
