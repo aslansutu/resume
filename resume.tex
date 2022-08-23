@@ -29,7 +29,8 @@
 %============================================================================%
 
 %we use article class because we want to fully customize the page and don't use a cv template
-\documentclass[10pt,A4]{article}	
+\documentclass[10pt,A4]{article}
+\usepackage{setspace}	
 
 
 %----------------------------------------------------------------------------------------
@@ -250,11 +251,11 @@
  		\textcolor{black}{\textbf{#1}} & \textcolor{darkcol}{#2}\\
 	\end{tabular*}%
 	
-	\hspace{1pt}
-	\begin{tikzpicture}[scale=1,rounded corners=2pt,very thin]
-		\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.15);
-		\fill [accentcol] (0,0) rectangle (#3\mpwidth, 0.15);
-  	\end{tikzpicture}%
+	\hspace{0.5pt}
+	%\begin{tikzpicture}[scale=1,rounded corners=2pt,very thin]
+	%	\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.15);
+	%	\fill [accentcol] (0,0) rectangle (#3\mpwidth, 0.15);
+  	%\end{tikzpicture}%
 }
 
 
@@ -342,6 +343,7 @@
 	\end{center}
 }
 
+\setstretch{0.8}
 
 %============================================================================%
 %
@@ -376,7 +378,7 @@
 
 \iconurl{Github}{12}{https://github.com/aslansutu}{aslansutu}{black}\\[6pt]
 
-\icontext{MapMarker}{12}{6406 Wilson Lane \\Bethesda, MD 20817}{black}\\[6pt]
+\icontext{MapMarker}{12}{18900 Goshen Road \\Gaithersburg, MD 20879}{black}\\[6pt]
 \icontext{MobilePhone}{12}{+1 919 888 89 74}{black}\\[6pt]
 \iconemail{Envelope}{12}{atakan16@gmail.com}{atakan16@gmail.com}{black}\\[6pt]
 
@@ -384,24 +386,19 @@
 
 \cvsection{SKILLS}
 
-\cvskill{Python} {2+ yrs} {.65} \\[-2pt]
+\cvskill{Python} {3+ yrs} \\
 
-\cvskill{OOP (C/C++)} {3+ yrs} {.78} \\[-2pt]
+\cvskill{C/C++} {2+ yrs} \\
 
-\cvskill{MySQL} {1 yr} {.58} \\[-2pt]
+\cvskill{MySQL} {1 yr} \\
 
-\cvskill{UNIX/Linux} {4+ yrs} {.72} \\[-2pt]
+\cvskill{UNIX/Linux} {4+ yrs} \\
 
-\cvskill{Java} {< 1 yr} {.1} \\[-2pt]
+\cvskill{Java} {< 1 yr} \\
 
-\cvskill{LaTeX} {2+ yrs} {.68} \\[-2pt]
+\cvskill{LaTeX} {2+ yrs} \\
 
-\cvskill{Docker} {< 1 yr} {.46} \\[-2pt]
-
-
-
-
-
+\cvskill{Docker} {1 yr} \\
 
 \vfill\null
 
@@ -429,9 +426,9 @@
 
 \cvsection{Languages}
 
-\cvskill{English} {23+ yrs} {1} \\[-2pt]
+\cvskill{English} {Native} \\
 
-\cvskill{Turkish} {26+ yrs} {1} \\[-2pt]
+\cvskill{Turkish} {Native} \\
 
 \vfill\null
 
@@ -442,6 +439,14 @@
 {}
 {}
 {Certificate administered by the National Health Care Provider Service}
+
+\vfill\null
+
+\cvmetaevent
+{CompTIA A+}
+{}
+{}
+{Certificate administered by CompTIA}
 
 \vfill\null
 
@@ -472,10 +477,10 @@
 %---------------------------------------------------------------------------------------
 %	TITLE  HEADER
 %----------------------------------------------------------------------------------------
-\fcolorbox{white}{darkcol}{\begin{minipage}[c][3.5cm][c]{1\mpwidth}
+\fcolorbox{white}{darkcol}{\begin{minipage}[c][2.5cm][c]{1\mpwidth}
 	\begin {center}
 		\HUGE{ \textbf{ \textcolor{white}{ \uppercase{ ATAKAN ONOL } } } } \\[-24pt]
-		\textcolor{white}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
+		\textcolor{white}{ \rule{0.8\textwidth}{1.15pt} } \\[4pt]
 		\large{ \textcolor{white} { Computer Engineer } }
 	\end {center}
 \end{minipage}} \\[14pt]
@@ -487,9 +492,8 @@
 \vfill\null
 \cvsection{PROFILE}
 
-\cvtext{ Currently a senior at Middle East Technical University as a computer engineer where our graduation project is about software composition
-			analyses. Also working full time as a computer engineer at a biomedical startup company called Oruba Technology. Looking for a much more
-			challenging role. \\
+\cvtext{ Currently a senior at Middle East Technical University working towards my computer engineering diploma. 
+		Meanwhile also working full time as a computer engineer at a biomedical startup company.  \\
 }
 
 %---------------------------------------------------------------------------------------
@@ -513,6 +517,7 @@
      	\item Implemeted an update mechanism for IoT devices using Mender.IoT
       	\item Conducted research to strengthen security vulnerabilities of the system
        	\item Provided remote technical support to all customers including those abroad
+       	\item Trained the incomming interns 
 	}}
 	{}
 	{}
@@ -577,10 +582,7 @@
 			\item Setup an OpenVPN server using docker
 			\item Research vulnerabilities in system that were detected by TrendMicro
 		}}
-		{\cvlist{
-			\item Docker 
-			\item OpenVPN
-		}}
+		{}
 		{}
 
 %-----------------------------
