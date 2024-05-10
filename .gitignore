@@ -6,5 +6,6 @@
 *.fls
 *.synctex.gz
 *.DS_Store
+cover-letter/info.tex
 
 !archive/*.pdf
